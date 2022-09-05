@@ -1,0 +1,169 @@
+
+/*
+#wrap설명
+min-width:최소한 값---320px:최초의 스마트폰 화면크기
+max-width:최대한 값---만약768px넘으면 overflow
+*/
+
+.title{text-align:center;
+       font-size:0.7rem;
+       color:#c0c0c0;
+       line-height:2em;
+       font-weight:lighter;}
+.text{text-align:center;
+      font-weight:bold;
+      color:#3f3f3f;
+      padding-bottom:5%;}
+
+
+/*********************section1****************************/
+#section2{background:#e7f3f5;
+          width:100%;}    
+    
+
+    
+/*********************section2****************************/
+#section2{background:#e7f3f5;
+          width:100%;
+          height:auto;
+          text-align:center;
+          padding-top:30px;}   
+
+#section2 h2{color:#f77219;}
+#section2 h2 span{font-size:0.8rem;} 
+#section2 article p{font-size:0.9rem;
+                    line-height:2em;
+                    font-weight:bold;}                         
+
+#section2 ul{position: relative;} 
+
+#section2 li{display:inline-block;
+             width: calc(50% - 4%);
+             box-shadow: 3px 3px 4px rgba(0,0,0,.12);
+             margin:2%;
+             float:left;}     
+
+#section2 li a {position: relative;
+                display: block;
+                width: 100%;
+                height: 175px;
+                padding-top: 13px;
+                background: #fff;}
+
+#section2 li a span{position: absolute;
+                    left: 10px;
+                    top: 5px;
+                    display: inline-block;
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: #cbcbcb;}                
+#section2 li a h4, #section2 li p{font-size:0.7rem;
+                                  line-height:1.7em;
+                                  padding:0 5%;}
+
+#section2 li p img{padding:5%}                   
+
+#section2 .b_img img{position:relative;
+                     width:100%;}
+
+/*....................section3....................*/
+
+#section3{
+          width:100%;
+          height:auto;
+          text-align:center;
+          padding-top:30px;} 
+           
+
+#section3  a img{width:100%}
+
+#section3  .text_all{width:50%;
+                              display:inline-block;
+                              margin:5% 0 5% 0}
+
+#section3  .main_text{display: block;
+                               padding-top: 15px;
+                               font-size: 1rem;
+                               line-height: 22px;
+                              }
+
+#section3  .sub_text{    padding-top: 4px;
+    font-size:0.7rem;
+    line-height:1.7em;
+    font-weight: 300;
+}                      
+#section3  a span{display: inline-block;
+    height: 22px;
+    padding: 0 15px;
+    border-radius: 50px;;
+    border: 1px solid #f77219;
+    color: #f77219;
+    line-height:2em;
+    font-size:0.7rem;}
+
+
+
+/*....................section4....................*/
+#section4{background:#ededed;
+          width:100%;
+          height:auto;
+          text-align:center;
+          padding-top:30px;
+          padding-bottom:7%;} 
+
+
+#section4 img{width:calc(100% - 4%);margin:0 2%}
+
+/*....................section5....................*/
+#section5{width:100%;
+          height:auto;
+          text-align:center;
+          padding-top:30px;
+          padding-bottom:7%;} 
+
+#section5 .box_contents{width:48%;
+                        border: 1px solid #c3c3c3;
+                        display:inline-block;
+                        }
+#section5 .box_contents p{padding:0 20px;}                    
+#section5 .box_contents img{width:100%}
+#section5 .box_contents .day{color:#f77219;padding-top:20px;}
+#section5 .box_contents .c_text{font-size:0.7rem;
+                                line-height:1.5em;
+                                padding-top:5px;}
+#section5 .box_contents .member_id{font-size:0.5rem;
+                                   padding-bottom:20px;
+                                   padding-top:5px;}
+
+
+
+/*....................section6....................*/
+#section6{width:100%;
+          height:auto;
+          text-align:center;
+          padding-top:30px;
+          padding-bottom:7%;} 
+
+#section6 li{display: inline-block;
+             padding: 0 10px;
+             border: 1px solid #f77219;
+             border-radius: 50px;
+             margin: 8px 2px 0 2px;
+             line-height: 2em;
+             font-size:0.7rem;
+             color: #818181;}
+
+#section6 li:hover{background:#f77219;;
+                   color: #FFF;}             
+
+
+
+/* slide*/
+.slider img {width:100%;}
+.slick-dots {text-align: center;position:absolute;bottom:20px;width:100%;}
+.slick-dots li{display: inline-block;}
+.slick-dots button{text-indent:-999999px;width:20px;height:20px;border-radius:50%;margin-left:5px;margin-right:5px;
+            border:1px solid #fff; background-color:rgba(255,255,255,0.3);      }
+.slick-dots li.slick-active button{background-color:rgba(255,255,255,1);border-color:#f77219;}
+
+#section3 .slick-dots {bottom:230px;}

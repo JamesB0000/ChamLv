@@ -1,0 +1,140 @@
+/******************** SUB 공통 ****************************/
+#header.sub_header{background-color:#fff;transition: 0.5s;}
+#header.sub_header h4{text-align: center;line-height: 70px;transition: 0.5s;}
+#header.sub_header.active {height:40px;}
+#header.sub_header.active h4 {line-height:40px;}
+#header.sub_header .nav_btn{transition:0.5s}
+#header.sub_header.active .nav_btn{top:-10px;}
+   
+/******************** SUB 1 ****************************/
+#sub1 #section1{background:#ededed;
+          width:100%;
+          height:auto;
+          margin-top:64px;
+          padding-top:30px;
+          text-align: center;
+          }
+#sub1 #section1 h4{
+            line-height:2em;}
+#sub1 #section1 p{font-size:0.8rem;
+            line-height:1.5em;}
+
+#sub1 #section1 h1 img{max-width: 100%;}        
+
+#sub1 #section1 h1 {display: block;
+              width: 74px;
+              height: 74px;
+              margin: 0 auto 10px;
+              background: #fff;
+              border-radius: 50%;}
+              
+#sub1 #section1 ul{width:100%}
+#sub1 #section1 li{display:inline-block;
+             width:48%;
+             background:#fff;
+             padding:5px 0;
+             border:solid 2px #cccccc;
+             margin:30px 0 20px 0;}
+#sub1 #section1 li .hus {float:right;
+                   padding-right:5px;}
+
+#sub1 #section1 .map {width:calc(100% - 2px);
+                border:solid 1px #cccccc;
+                margin-top:30px;}     
+#sub1 #section1 .map img{width:100%;}   
+
+
+
+
+
+/*....................section2....................*/
+#sub1 .tabSet{
+        width:100%;
+        height:auto;
+        padding-top:30px;}
+#sub1 .tabSet .all{width:760px; margin:auto;}
+
+#sub1 .tabSet h4{padding-bottom:20px;
+           text-align:center;}
+
+#sub1 .tabSet .tabs p{text-align:center;
+                line-height:2.5em;
+                font-weight:bold;
+                font-size:0.7rem;} 
+
+#sub1 .gray_bar{background-color:#ededed;width:100%; height:20px;}
+
+#sub1 .tabSet .tabs .traffic{text-align:center}
+
+#sub1 .tabSet ul{width:100%;
+      overflow:hidden;
+      box-sizing: border-box;
+	padding:15px;
+      line-height:1.8em;
+      font-size:0.7rem;
+}
+#sub1 .tabSet .tabs li{width:32%;display:inline-block;
+		list-style-type:none;
+            text-align:center;
+	}
+#sub1 .tabSet ul li a{text-align:center;
+			display:inline-block;
+			color:#fff;
+			padding:25px;
+			border:1px solid #ccc;
+			border-radius:100px;
+			font-weight:bold;
+			font-size:14px;
+			text-decoration:none;
+                  width:20px;
+                  height:auto;
+                  cursor: pointer;
+		}
+
+#sub1 .tabSet ul li img{width:100%}            
+#sub1 .tabSet ul li a:hover{
+			text-decoration:underline;
+		}
+#sub1 .tabSet ul li a.on{
+			background:#f66c18;
+			border-color:#fff;
+			cursor:default;
+			color:#31374c;
+		}
+#sub1 .tabSet ul li a.on:hover{
+			text-decoration:none;
+		}
+#sub1 .tabSet .panels{
+	background:#fff;
+	min-height:180px;
+}
+
+#sub1 .tabSet .panel{
+	padding:15px 15px 30px 15px;
+	font-size:14px;
+      color:#4d4d4d;
+   
+}
+#sub1 .tabSet .panel h3{text-align:center;
+                  border-bottom:2px #777 solid;
+                  line-height:2.5em;
+                  }
+#sub1 .tabSet .panel img{width:100%;padding-top:20px;}
+#sub1 .tabSet .panel .load{margin-top:20px;
+                     display: inline-block;
+                     padding: 0 15px;
+                     border: 1px solid #f66c18;
+                     border-radius: 14px;
+                     font-size: 0.7rem;
+                     text-align: center;
+                     line-height:1.7EM;
+                     color: #f66c18;}
+
+
+                     
+
+
+
+/******************** SUB 2 ****************************/                     
+
+
