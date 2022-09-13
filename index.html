@@ -24,20 +24,102 @@
 
 <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/slick_option.js"></script>
+
+<script>
+   $(function(){
+      var slidexx;
+      slidexx = setInterval(function(){
+      $('#slidexx .container>div:first-child').animate({'margin-left':'-360px'},1000,
+              function(){
+              $('#slidexx .container').append($('#slidexx .container>div:first-child'));
+              $('#slidexx .container>div:last-child').css({'margin-left':0});
+              }); //append
+       }, 2000 );
+  }) // end
+</script>
+
+<script>
+  function setCookie(name, value, expiredays) {
+		var todayDate = new Date();
+		todayDate.setDate(todayDate.getDate() + expiredays);
+		document.cookie = name + "=" + escape(value) + "; path=/; expires="
+				+ todayDate.toGMTString() + ";"
+	}
+	//메인배너팝업 닫기
+	function closemPop4(pid) {
+		if ($("#mpop4_close_btn").is(":checked")) {
+			setCookie("mpopdiv4", "done", 1);
+		}
+		$("#mpopdiv4").css("display","none");
+	}
+	//메인배너팝업
+	function checkCookie4() {
+		//쿠키값이 있으면 element를 가려준다
+		if (getCookie("mpopdiv4") == "done") {
+			$("#mpopdiv4").attr("style", "display:none");
+		} else {
+			//쿠키값이 없으면 element를 보여준다
+			$("#mpopdiv4").attr("style", "display:block");
+		}
+	}
+	function getCookie(name) {
+		var nameOfCookie = name + "=";
+		var x = 0;
+		while (x <= document.cookie.length) {
+			var y = (x + nameOfCookie.length);
+			if (document.cookie.substring(x, y) == nameOfCookie) {
+				if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
+					endOfCookie = document.cookie.length;
+				return unescape(document.cookie.substring(y, endOfCookie));
+			}
+			x = document.cookie.indexOf(" ", x) + 1;
+			if (x == 0)
+				break;
+		}
+		return "";
+	} 
+</script>
+
+<!-- <script>
+$(document).ready(function(){
+	checkCookie4(); //메인배너
+});
+</script> -->
+
 </head>
 
 <body>
+  <div id="mpopdiv4"	style="position: absolute; z-index: 1000; width: 100%; height: 0px; background-color: transparent;display:block;">
+    <div id="mpop4"
+      style="float: left; width: 385px; height: 400px; background-color: white; border: 1px solid rgb(211, 211, 211); display: block; z-index: 100; left: 10%; position: absolute;">
+      <div style=" font-size: 16px; text-align: center;">
+        <img src="images/pop04.jpg" style="width: 385px;" alt="covid-19">
+      </div>
+      <div
+        style="padding-left: 10px; padding-right: 10px; padding-bottom: 12px; font-size: 12pt; background: #f3f3f3; height: 33px; color:black; height: 33px;">
+        <span style="float: left; margin-top: 10px;">&nbsp;
+          <input type="checkbox" id="mpop4_close_btn">&nbsp;
+          <label for="text">오늘은 그만 볼래요</label>
+        </span> 
+        <span style="float: right; margin-top: 10px;">
+          <span id="popup_close_btn" style="cursor: pointer;" onclick="javascript:closemPop4('mpop4');"
+          >닫기 X</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
     <div id="wrap">
         <header id="header">
-           <div class="inner"> <h1 class="logo"><a href="#"><img src="images/logo.png" alt=""></a></h1>
+           <div class="inner"> <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
            <nav id="nav">
             <div class="inner">
                 <ul class="gnb flex">
                    <li>
-                     <a href="#">병원소개<span>SUB</span></a>
+                     <a class="under" href="#">병원소개<span>(SUB)</span></a>
                      <ul class="dpeth2">
                        <li><a href="#">병원소개</a></li>
-                       <li><a href="sub01.html">의료진 소개<SPan>SUB</SPan></a></li>
+                       <li><a class="under" href="sub01.html">의료진 소개<SPan>(SUB)</SPan></a></li>
                        <li><a href="#">오시는 길</a></li>
                        <li><a href="#">비젼과 미션</a></li>
                      </ul>
@@ -84,6 +166,9 @@
         </div>
         </header>
 
+       
+
+
         <section id="slide" class="lazy slider">
           <div>
             <div class="slide01">
@@ -102,16 +187,16 @@
             <div class="slide02">
               <img src="images/Main_Slide_04.jpg" alt="Main_Slide01">
               <div class="inner">
-                <!-- <div class="slide_txt_b">
+                <div class="slide_txt_b">
                   <p class="slide_txt04">도심속 어르신들의 보금자리</p>
                   <p class="slide_txt05">부산광역시 동래구 충렬대로 258</p>
                   <p class="slide_txt06">TEL : 051-553-0050</p>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- <div>
+          <div>
             <div class="slide03">
               <img src="images/Main_Slide_03.jpg" alt="Main_Slide01">
             </div>
@@ -138,7 +223,7 @@
           <div>
             <div class="slide07">
               <img src="images/Main_Slide_07.jpg" alt="Main_Slide01">
-            </div> -->
+            </div>
           </div>
        </section>
 
@@ -297,6 +382,15 @@
       <div>
         <img src="images/garden01aa.jpg" alt="">
       </div>
+      <div>
+        <img src="images/bokdo.jpg" alt="">
+      </div>
+      <div>
+        <img src="images/myeon.jpg" alt="">
+      </div>
+      <div>
+        <img src="images/kaein.jpg" alt="">
+      </div>
     </div>
   </div>
   </section>
@@ -350,11 +444,47 @@
 </section>
 
 <section id="support">
-  <!-- <div class="inner"> -->
-    <div>
-      <img src="images/Hop_List04.jpg" alt="">
-    </div>
-  <!-- </div> -->
+  <div class="inner">
+  <div id="slidexx"> 
+    <div class="container"> 
+        <div class="slide_photo1">
+          <a href="#">
+          <img src="images/koshin.jpg">
+        </a>
+        </div> 
+
+        <div class="slide_photo2">
+          <a href="#">
+          <img src="images/chim.jpg">
+        </a>
+        </div> 
+
+        <div class="slide_photo3">
+          <a href="#">
+          <img src="images/meri.jpg">
+        </a>
+        </div> 
+
+        <div class="slide_photo4">
+          <a href="#">
+          <img src="images/inje.jpg">
+        </a>
+        </div> 
+
+        <div class="slide_photo5">
+          <a href="#">
+          <img src="images/donga.jpg">
+        </a>
+        </div> 
+
+        <div class="slide_photo5">
+          <a href="#">
+          <img src="images/budae.jpg">
+          </a>
+        </div> 
+    </div> 
+</div>
+</div>
 </section>
 
 <section id="address">
@@ -409,6 +539,10 @@
       </div>
     </div>
   </footer>
+
+
+
+
 
 </body>
 </html>
